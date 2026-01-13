@@ -1,11 +1,11 @@
-<footer class="footer px-4 sm:px-6">
+<footer class="footer px-16 mb-8">
     <div class="footer__top flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div class="footer__brand">
-            <img src="{{ asset('Group.png') }}" alt="Sparkle Cloud" class="footer__logo h-auto w-full max-w-full object-contain sm:max-w-[60px]">
-            <div>
+            <img src="{{ asset('Frame.svg') }}" alt="Sparkle Cloud" class="footer__logo h-auto w-full max-w-full object-contain ">
+            {{-- <div>
                 <p class="footer__brand-name">SPARKLE</p>
                 <p class="footer__brand-sub">CLOUD</p>
-            </div>
+            </div> --}}
         </div>
         <div class="footer__nav flex flex-wrap gap-4 md:gap-6">
             <a href="#">Modules</a>
@@ -24,11 +24,11 @@
             <span class="footer__icon">
                 <img src="{{ asset('Vector.png') }}" alt="Email" class="h-auto w-full max-w-full object-contain sm:max-w-[16px]">
             </span>
-            <span>info@sparklecoloud.com</span>
+            <a href="mailto:"><span>info@sparklecoloud.com</span></a>
             <span class="footer__icon">
                 <img src="{{ asset('Group (1).png') }}" alt="Phone" class="h-auto w-full max-w-full object-contain sm:max-w-[16px]">
             </span>
-            <span>+31(0) 23-5574211</span>
+            <a href="tel:+"><span>+31(0) 23-5574211</span></a>
         </div>
         <div class="footer__social flex items-center gap-4">
             <a href="#"><img src="{{ asset('u_facebook-f.png') }}" alt="Facebook" class="h-auto w-full max-w-full object-contain sm:max-w-[16px]"></a>

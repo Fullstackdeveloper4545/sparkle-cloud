@@ -27,8 +27,10 @@
             <x-split-section />
             <x-templates/>
             <x-main-faq />
-            <x-container-single />
-            <x-footer />
+            <div class="page-bg">
+        <x-container-single />
+        <x-footer />
+    </div>
         </div>
 
         @stack('scripts')

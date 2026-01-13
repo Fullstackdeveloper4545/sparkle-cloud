@@ -23,8 +23,8 @@
                 <div class="pricing-hero__content">
                     <h1 class="pricing-hero__title">Pricing Plans</h1>
                     <p class="pricing-hero__subtitle">
-                        No confusing subscriptions, no hidden costs, and even as your organization grows, the costs will not increase.
-                        Get started for free with our 14-day trial!
+                        No confusing subscriptions, no hidden costs, and even as your organization grows, the costs will decrease. 
+Get started for free with our 14-day trial!
                     </p>
                     <div class="pricing-toggle">
                         <button class="pricing-toggle__btn pricing-toggle__btn--active">Monthly</button>
@@ -37,7 +37,7 @@
                         <h3>Website &amp; Webshop</h3>
                         <p class="pricing-card__desc">Lorem ipsum is simply dummy text of the printing.</p>
                         <div class="pricing-card__price">
-                            <span class="pricing-card__amount">EUR 39</span>
+                            <span class="pricing-card__amount">€ 39</span>
                             <span class="pricing-card__period">/ per month</span>
                         </div>
                         <p class="pricing-card__note"  style= "margin-bottom:20px;">billed annually at EUR 409</p>
@@ -63,7 +63,7 @@
                         <h3>AI Agents</h3>
                         <p class="pricing-card__desc">Lorem ipsum is simply dummy text of the printing.</p>
                         <div class="pricing-card__price">
-                            <span class="pricing-card__amount">EUR 169</span>
+                            <span class="pricing-card__amount">€ 169</span>
                             <span class="pricing-card__period">/ per month</span>
                         </div>
                         <p class="pricing-card__note"  style=" margin-bottom:20px;">billed annually at EUR 1899</p>
@@ -88,7 +88,7 @@
                         <h3>CRM+</h3>
                         <p class="pricing-card__desc">Lorem ipsum is simply dummy text of the printing.</p>
                         <div class="pricing-card__price">
-                            <span class="pricing-card__amount">EUR 199</span>
+                            <span class="pricing-card__amount">€ 199</span>
                             <span class="pricing-card__period">/ per month</span>
                         </div>
                         <p class="pricing-card__note"  style= "margin-bottom:20px;">billed annually at EUR 2199</p>
@@ -114,7 +114,7 @@
                         <h3>Sparkle Complete</h3>
                         <p class="pricing-card__desc">Lorem ipsum is simply dummy text of the printing.</p>
                         <div class="pricing-card__price">
-                            <span class="pricing-card__amount">EUR 369</span>
+                            <span class="pricing-card__amount">€ 369</span>
                             <span class="pricing-card__period">/ per month</span>
                         </div>
                         <p class="pricing-card__note"  style=" margin-bottom:20px;">billed annually at EUR 3999</p>
@@ -266,8 +266,8 @@
             <section class="pricing-help">
                 <h3>Need help with plan selection?</h3>
                 <div class="pricing-help__cta">
-                    <button class="pill-btn pricing-help__btn  ">Our Quick Guide will help you choose the Right Plan For your needs</button>
-                    <button class="pricing-help__btn pricing-help__btn--primary pill-btn">Help Me Choose The Right Plan</button>
+                    <button class=" pricing-help__btn  ">Our Quick Guide will help you choose the Right Plan For your needs</button>
+                    <button class="pricing-help__btn pricing-help__btn--primary ">Help Me Choose The Right Plan</button>
                 </div>
             </section>
 

@@ -6,7 +6,7 @@
                     Verhoog Je Sales Met 25%
                 </button>
                 <h2 class="mt-5 text-[28px] font-medium leading-[1.2] text-white syne sm:text-[36px] md:text-[44px] lg:text-[52px]">
-                    Sparkle is made Simple<br />and Powerful
+                    Sparkle is m<span class="text-[#999999]">ade Simple</span><br />and Powerf<span class="text-[#999999]">ul</span>
                 </h2>
             </div>
             <p class="max-w-lg text-[14px] leading-[1.6] text-white montserrat sm:text-[15px]">

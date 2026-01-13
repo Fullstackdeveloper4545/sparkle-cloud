@@ -6,7 +6,7 @@
            <span class=  >Testimonials</span>
         </button>
         <h2 class="text-[28px] leading-[1.2] font-medium text-white syne sm:text-[34px] md:text-[42px] lg:text-[52px]">
-            Hear What our customer are saying<br />about Sparkle
+            Hear What our cu<span class="text-[#999999]">stomer are saying</span><br />about <span class="text-[#999999]">Sparkle</span>
         </h2>
         <p class="max-w-2xl text-[12px] leading-[1.6] text-white/70 montserrat sm:text-[13px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the

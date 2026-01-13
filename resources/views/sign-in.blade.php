@@ -23,12 +23,12 @@
                     <span class="logo-mark auth-logo"></span>
                     <div class="text-left leading-tight">
                         <div class="text-[14px] font-semibold uppercase tracking-[0.28em] text-white">Sparkle</div>
-                        <div class="text-[12px] font-medium uppercase tracking-[0.32em] text-white/70">Cloud</div>
+                        <div class="text-[12px] font-medium uppercase tracking-[0.32em] text-white">Cloud</div>
                     </div>
                 </div>
 
                 <div class="auth-card auth-card--hero auth-float w-full max-w-[520px] rounded-[20px] px-9 py-9 text-center">
-                    <h1 class="auth-title">Login</h1>
+                    <h1 class="auth-title">Lo<span class="text-[#999999]">gin</span></h1>
                     <p class="auth-subtitle">Welcome back! Please enter your details</p>
 
                     <form class="auth-form-text mt-7 space-y-4 text-left">
@@ -55,7 +55,7 @@
                                 <input type="checkbox" class="auth-checkbox h-[18px] w-[18px] rounded-[4px] border-white/40 bg-transparent text-white focus:ring-0 focus:ring-offset-0" />
                                 <span class="font-medium">Remember me</span>
                             </label>
-                            <a href="#" class="font-medium text-white/80 transition hover:text-white">Forgot Password</a>
+                            <a href="#" class="font-medium text-white transition hover:text-white">Forgot Password</a>
                         </div>
 
               <a href="#" class="btn w-full"  style="padding:14px 200px;">
@@ -66,8 +66,8 @@
 </a>              </form>
 
                 </div>
-                <p class="mt-1 text-center text-[12px] text-white/70">
-                    Didn't have an account? <a href="{{ route('sign-up') }}" class="font-semibold text-[#AA0473]">Sign Up</a>
+                <p class="mt-1 text-center text-[12px] text-white">
+                    Didn't have an account? <a href="{{ route('sign-up') }}" class="font-semibold text-[#AA0473] underline decoration-current">Sign Up</a>
                 </p>
             </div>
         </div>

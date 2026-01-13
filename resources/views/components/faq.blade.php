@@ -1,11 +1,11 @@
-<section class="relative mt-16 w-10/12 bg-[#101010] m-auto px-4 py-12 sm:px-6 md:py-16">
+<section class="relative mt-16 w-10/12 bg-transparent m-auto px-4 py-12 sm:px-6 md:py-16">
     <div class="faq-grid grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div class="faq-intro">
             <button class="pill-button w-50">
                 Meer antwoorden:
             </button>
             <h2 class="faq-heading text-[28px] leading-[1.2] sm:text-[34px] md:text-[38px] lg:text-[42px]">
-                Frequently Asked Questions
+                Frequently As<span class="text-[#999999]">ked Questions</span>
             </h2>
             <button class="faq-cta">Explore all</button>
         </div>

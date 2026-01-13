@@ -13,6 +13,12 @@
         <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
 
         @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/auth-three.js'])
+
+        <style>
+            .auth-field::placeholder {
+                text-align: left;
+            }
+        </style>
     </head>
     <body class="min-h-screen overflow-x-hidden bg-[#0b0b0e] text-white antialiased">
         <div class="relative min-h-screen overflow-hidden">
@@ -28,11 +34,11 @@
                 </div>
 
                 <div class="auth-card auth-card--hero auth-float w-full max-w-[520px] rounded-[20px] px-9 py-9 text-center">
-                    <h1 class="auth-title">Sign up</h1>
+                    <h1 class="auth-title">Sig<span class="text-[#999999]">n up</span></h1>
                     <p class="auth-subtitle">Welcome! Please enter your details</p>
 
                     <form class="auth-form-text mt-7 space-y-4 text-left">
-                        <label class="auth-input auth-input--hero flex items-center gap-4 rounded-[12px] px-5 py-[14px]">
+                        <label class="auth-input auth-input--hero flex items-center gap-4  rounded-[12px] px-5 py-[14px]">
                             <svg class="h-[22px] w-[22px] text-white/85" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                 <path d="M12 12.25a3.5 3.5 0 1 0-3.5-3.5 3.5 3.5 0 0 0 3.5 3.5Z" stroke="currentColor" stroke-width="1.4"/>
                                 <path d="M4.75 19.25a7.25 7.25 0 0 1 14.5 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>

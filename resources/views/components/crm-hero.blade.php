@@ -7,7 +7,7 @@
                 <img src="{{ asset('Ellipse 202 (3).png') }}" alt="" class="pointer-events-none absolute left-1/2 top-[120px] w-full max-w-[1200px] -translate-x-1/2 opacity-90" />
 
                 <div class="hero-content absolute inset-x-0 top-0 z-1 mt-[90px] flex w-full flex-col items-center px-4 text-center sm:mt-[110px] md:mt-[130px] md:px-8">
-                    <p class="text-[16px] font-normal leading-[1.1] text-[#b6bac4] montserrat sm:text-[18px] md:text-[22px]">
+                    <p class="text-[16px] font-normal leading-[1.1] text-[#ffffff] montserrat sm:text-[18px] md:text-[22px]">
                     De krachtigste module
                     </p>
                     <h1 class="mt-4 text-[48px] font-medium capitalize leading-[1.1] text-white syne sm:text-[64px] md:text-[88px] lg:text-[120px]">

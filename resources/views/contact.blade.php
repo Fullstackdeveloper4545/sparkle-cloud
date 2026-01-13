@@ -35,11 +35,12 @@
                         Of course you can also call or WhatsApp.
                     </p>
 
-                    <div class="contact-info">
+                    <div class="contact-info card2">
                         <div class="contact-info__row">
                             <span>Call</span>
                             <span>+31 (0)23 557 4211</span>
                         </div>
+                    
                         <div class="contact-info__row">
                             <span>WhatsApp with</span>
                             <span>Open WhatsApp</span>
@@ -50,7 +51,7 @@
                         </div>
                     </div>
 
-                    <div class="contact-address">
+                    <div class="contact-address card2">
                         <div class="contact-address__block">
                             <h4>Main address</h4>
                             <p>Head office</p>
@@ -64,7 +65,7 @@
                 </div>
 
                 <div class="contact-card contact-card--form">
-                    <h2>Let's connect &amp;<br>help you succeed</h2>
+                    <h2 class="text-center">Let's co<span class="text-[#999999]">nnect &amp; </span><br>help you <span class="text-[#999999]">succeed</span></h2>
                     <form class="contact-form">
                         <label>
                             <span>Full Name</span>
@@ -98,46 +99,7 @@
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
-
-            <footer class="contact-footer">
-                <div class="contact-footer__top">
-                    <div class="contact-footer__brand">
-                        <span class="logo-mark"></span>
-                        <div>
-                            <strong>Sparkle</strong>
-                            <span>Cloud</span>
-                        </div>
-                    </div>
-                    <nav class="contact-footer__nav">
-                        <a href="#">Modules</a>
-                        <a href="{{ route('prices') }}">Pricing</a>
-                        <a href="#">Cases</a>
-                        <a href="#">Blog</a>
-                        <a href="#">About</a>
-                        <a href="{{ route('contact') }}">Contact</a>
-                    </nav>
-                </div>
-                <div class="contact-footer__divider"></div>
-                <div class="contact-footer__bottom">
-                    <div class="contact-footer__info">
-                        <span>info@sparklecloud.com</span>
-                        <span>+31 (0)23 5574211</span>
-                    </div>
-                    <div class="contact-footer__social">
-                        <span>f</span>
-                        <span>t</span>
-                        <span>in</span>
-                    </div>
-                    <div class="contact-footer__legal">
-                        <span>General conditions</span>
-                        <span>Privacy statement</span>
-                        <span>Disclaimer</span>
-                    </div>
-                    <div class="contact-footer__copyright">
-                        Copyright © 2025 Sparkle by Brightness
-                    </div>
-                </div>
-            </footer>
+        <x-footer />
         </div>
     </body>
 </html>

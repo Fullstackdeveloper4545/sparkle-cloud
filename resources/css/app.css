@@ -9,6 +9,7 @@
         "Noto Color Emoji";
 }
 
+
 .hero-three-container {
     background: radial-gradient(
             circle at 50% 30%,
@@ -34,6 +35,13 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #101010;
+    /* Background image
+    background-image: url("../images/36853a63668dc373db755a4816b98551d484f89d.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    background-color: #000000; */
 }
 
 h1,
@@ -44,6 +52,8 @@ h5,
 h6 {
     font-family: "Syne", sans-serif;
 }
+
+
 
 .hero-ceiling-wrap {
     position: absolute;
@@ -688,12 +698,16 @@ h6 {
 
 @layer components {
     .footer {
+        margin:auto;
+        width:95%;
         margin-top: 32px;
-        background: #0b0b0e;
-        border-radius: 18px;
+        /* margin-bottom:32px; */
+        background: #000000;
+        border-radius: 10px;
         padding: 28px 32px;
-        color: #d2d5dd;
-        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+        color: #ffffff;
+   
+    
     }
 
     .footer__top,
@@ -954,15 +968,19 @@ h6 {
         font-family: "Montserrat", sans-serif;
         font-size: 14px;
         font-weight: 400;
-        color: #c7cad2;
+        color: #ffffff;
         line-height: 1.5;
         text-align: center;
     }
 
     .auth-input {
         background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+        /* border: 1px solid rgba(255, 255, 255); */
+        /* box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03); */
+        
+   box-shadow:
+  0.2px 0.2px 0px rgba(255, 255, 255), 
+  -0.2px -0.2px 0px rgba(255,255,255); 
         transition: border-color 160ms ease, background-color 160ms ease,
             box-shadow 160ms ease;
     }
@@ -974,10 +992,15 @@ h6 {
             rgba(63, 65, 68, 0.9) 55%,
             rgba(43, 44, 47, 0.95) 100%
         );
-        border-color: rgba(255, 255, 255, 0.45);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        /* border-color: rgba(255, 255, 255); */
+        
+   box-shadow:
+  1.2px 1.2px 0px rgba(255, 255, 255), 
+  -1.2px -1.2px 0px rgba(255,255,255); 
+        /* box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),
             inset 0 0 0 1px rgba(255, 255, 255, 0.16),
-            0 14px 24px rgba(0, 0, 0, 0.35);
+            0 14px 24px rgba(0, 0, 0, 0.35); */
+
     }
 
     .auth-input:focus-within {
@@ -1004,6 +1027,9 @@ h6 {
         height: 100%;
         padding: 0;
     }
+       .auth-field::placeholder {
+                text-align: left;
+            }
 
     .auth-text {
         font-weight: 500;
@@ -1052,12 +1078,42 @@ h6 {
         width: 52px;
         height: 52px;
     }
+.auth-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: #333437; /* 👈 required background */
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    position: relative;
+}
 
-    .auth-checkbox {
-        border: 1px solid rgba(255, 255, 255, 0.55);
-        background: transparent;
-        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3);
-    }
+/* WHITE TICK */
+.auth-checkbox::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: white; /* 👈 white tick */
+    transform: scale(0);
+    transition: transform 0.15s ease-in-out;
+    clip-path: polygon(
+        14% 44%,
+        0% 65%,
+        50% 100%,
+        100% 16%,
+        80% 0%,
+        43% 62%
+    );
+}
+
+/* CHECKED STATE */
+.auth-checkbox:checked::before {
+    transform: scale(1);
+}
 
     .password-toggle {
         display: inline-flex;
@@ -1110,7 +1166,7 @@ h6 {
     .pricing-hero__subtitle {
         margin-top: 12px;
         font-size: 14px;
-        color: #c7cad2;
+        color: #ffffff;
         line-height: 1.7;
     }
 
@@ -1133,8 +1189,8 @@ h6 {
     }
 
     .pricing-toggle__btn--active {
-        background: rgba(255, 255, 255, 0.2);
-        color: #ffffff;
+        background: rgba(255, 255, 255);
+        color: #000;
     }
 
     .pricing-orb {
@@ -1374,20 +1430,31 @@ h6 {
         gap: 12px;
         flex-wrap: wrap;
         justify-content: center;
+        background:rgba(255,255,255,0.1);
+        padding:10px 20px;
+        border-radius:100px;
+
+         box-shadow:
+  1.2px 1.2px 0px rgba(255, 255, 255, 0.2), 
+  -1.2px -1.2px 0px rgba(255,255,255,0.2); 
+        
+
+
+
     }
 
     .pricing-help__btn {
-        border-radius: 999px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        background: rgba(255, 255, 255, 0.06);
+     border-radius: 999px;
+        /* border: 1px solid rgba(255, 255, 255, 0.2); */
+        /* background: rgba(255, 255, 255, 0.06); */
         color: #e5e7ee;
         font-size: 12px;
         padding: 10px 18px;
     }
 
     .pricing-help__btn--primary {
-        background: rgba(255, 255, 255, 0.15);
-        color: #fff;
+        background: rgba(255, 255, 255);
+        color: black;
     }
 
     @media (max-width: 1024px) {
@@ -1600,12 +1667,12 @@ h6 {
         padding: 6px 16px;
         border-radius: 999px;
         font-size: 12px;
-        color: #c7cad2;
+        color: #ffffff;
     }
 
     .contact-hero__pill--active {
-        background: rgba(255, 255, 255, 0.2);
-        color: #ffffff;
+        background: rgba(255, 255, 255);
+        color: #000;
     }
 
     .contact-hero__title {
@@ -1650,7 +1717,7 @@ h6 {
     .contact-info {
         margin-top: 18px;
         border-radius: 12px;
-        background: rgba(255, 255, 255, 0.06);
+        /* background: rgba(255, 255, 255, 0.06); */
         padding: 14px;
         display: grid;
         gap: 10px;
@@ -1728,9 +1795,10 @@ h6 {
         justify-self: end;
         border-radius: 999px;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        background: rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0);
         color: #ffffff;
         font-size: 12px;
+        padding:5px 20px;
     }
 
     .contact-map {
@@ -1981,18 +2049,9 @@ h6 {
         margin-left: -24px;
         margin-right: -24px;
         border-radius: 0;
-        background: #101010;
+        background: transparent;
         min-height: 960px;
-        padding: 80px 32px 140px;
-
-          /* background-image: url("../images/36853a63668dc373db755a4816b98551d484f89d.png"); */
-        background-repeat: no-repeat;
-    background-position: center bottom;
-
-    /* spacing so bg is visible */
-    padding: 80px 24px;
-
-    background-size: cover;
+        padding: 80px 32px 30px;
     }
 
     .container-hero__bg {
@@ -2612,7 +2671,15 @@ h6 {
     -webkit-backdrop-filter: blur(5.3px);
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
-
+.card2{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.05);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1px);
+-webkit-backdrop-filter: blur(1px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 .pill-button {
   display: inline-flex;
@@ -2637,8 +2704,8 @@ backdrop-filter: blur(2px);
 
  
    box-shadow:
-  1.2px 1.2px 0px rgba(255, 255, 255), 
-  -1.2px -1.2px 0px rgba(255,255,255);    
+  1.2px 1.2px 0px rgba(255, 255, 255,0.3), 
+  -1.2px -1.2px 0px rgba(255,255,255,0.3);    
 }
 
 

@@ -20,8 +20,10 @@
             <x-crm-features />
             <x-testonomial2 />
             <x-faq />
-            <x-container-single />
+            <div class="page-bg">
+                <x-container-single />
             <x-footer />
+            </div>
         </div>
 
         @stack('scripts')

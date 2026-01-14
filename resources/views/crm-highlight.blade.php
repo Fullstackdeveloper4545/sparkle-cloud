@@ -18,8 +18,11 @@
             <x-crm-hero />
             <x-logos2 />
             <x-crm-card-grid />
-            <x-container-single />
+            <div class="page-bg">
+                <x-container-single />
             <x-footer />
+            </div>
+        
         </div>
 
         @stack('scripts')

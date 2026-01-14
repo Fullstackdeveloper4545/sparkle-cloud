@@ -272,10 +272,10 @@ Get started for free with our 14-day trial!
             </section>
 
           <x-faq />
-
-        <x-container-single />
-
-            <x-footer />
+            <div class="page-bg">
+                 <x-container-single />
+                 <x-footer />
+            </div>
         </div>
     </body>
 </html>

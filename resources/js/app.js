@@ -4,30 +4,33 @@ import './bootstrap';
   const dot = document.getElementById("progressDot");
   const steps = [...document.querySelectorAll(".process-step")];
 
-  scrollBox.addEventListener("scroll", () => {
-    const maxScroll = scrollBox.scrollHeight - scrollBox.clientHeight;
-    const scrollTop = scrollBox.scrollTop;
+  // Only add scroll listener if element exists
+  if (scrollBox) {
+    scrollBox.addEventListener("scroll", () => {
+      const maxScroll = scrollBox.scrollHeight - scrollBox.clientHeight;
+      const scrollTop = scrollBox.scrollTop;
 
-    /* Progress bar movement */
-    const progress = scrollTop / maxScroll;
-    const percent = progress * 100;
-    fill.style.height = percent + "%";
-    dot.style.top = percent + "%";
+      /* Progress bar movement */
+      const progress = scrollTop / maxScroll;
+      const percent = progress * 100;
+      fill.style.height = percent + "%";
+      dot.style.top = percent + "%";
 
-    /* 🔒 FORCE STEP 1 AT TOP */
-    if (scrollTop < steps[1].offsetTop - 40) {
-      dot.textContent = "01";
-      return;
-    }
-
-    /* Detect active step */
-    for (let i = steps.length - 1; i >= 0; i--) {
-      if (scrollTop >= steps[i].offsetTop - 60) {
-        dot.textContent = steps[i].dataset.step;
-        break;
+      /* 🔒 FORCE STEP 1 AT TOP */
+      if (scrollTop < steps[1].offsetTop - 40) {
+        dot.textContent = "01";
+        return;
       }
-    }
-  });
+
+      /* Detect active step */
+      for (let i = steps.length - 1; i >= 0; i--) {
+        if (scrollTop >= steps[i].offsetTop - 60) {
+          dot.textContent = steps[i].dataset.step;
+          break;
+        }
+      }
+    });
+  }
 document.addEventListener('DOMContentLoaded', () => {
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach((item) => {
@@ -70,7 +73,7 @@ function fixButtonBorder() {
     rect.setAttribute('ry', r);
 
     const length = rect.getTotalLength();
-    const dash = length * 0.12;
+    const dash = length * 0.14;
     const gap = length - dash;
 
     rect.style.strokeDasharray = `${dash} ${gap}`;
@@ -83,7 +86,7 @@ function fixButtonBorder() {
         { strokeDashoffset: -length }
       ],
       {
-        duration: 4000,
+        duration: 4500,
         iterations: Infinity,
         easing: "linear"
       }
@@ -93,3 +96,10 @@ function fixButtonBorder() {
 
 fixButtonBorder();
 window.addEventListener('resize', fixButtonBorder);
+
+// Ensure buttons are animated after page fully loads
+window.addEventListener('load', () => {
+  setTimeout(fixButtonBorder, 100);
+  setTimeout(fixButtonBorder, 300);
+  setTimeout(fixButtonBorder, 800);
+});

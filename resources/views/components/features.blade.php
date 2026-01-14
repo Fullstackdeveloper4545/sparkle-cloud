@@ -47,7 +47,15 @@
 </section>
 <section class="mt-12 px-4 sm:px-6 lg:px-0">
     <div class="relative overflow-hidden rounded-[16px] p-4 pt-[5px] sm:px-6 md:px-10 lg:px-[117px]">
-        <img src="{{ asset('Container (1).png') }}" alt="Feature container" class="h-auto w-full object-cover">
+        <img src="{{ asset('Container (2).png') }}" alt="Feature container" class="relative z-0 h-auto w-full object-cover">
+        <div class="card1 p-8 absolute top-110 left-35 w-5/12">
+            <h1 class="flex w-full font-semibold gap-2 text-[18px] mb-2">
+                <div>03</div>
+                <div>We make the difference</div>
+            </h1>
+            <p class="relative mb-2 text-[14px] left-6 mb-1" style="margin-bottom:20px;">Large packages either become too expensive or can't be customized as needed. This is often the difference between an effective solution and frustration. Sparkle Cloud is built to solve this for you, the customer.</p>
+        
+        </div>
     </div>
 </section>
 

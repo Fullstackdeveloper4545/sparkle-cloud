@@ -14,18 +14,18 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/auth-three.js'])
     </head>
-    <body class="min-h-screen overflow-x-hidden bg-[#0b0b0e] text-white antialiased">
+    <body class="min-h-screen overflow-x-hidden bg-[#1B1B1B] text-white antialiased">
         <div class="relative min-h-screen overflow-hidden">
             <div id="three-container" class="absolute inset-0 z-0"></div>
 
             <div class="relative z-20 flex h-screen flex-col items-center justify-center px-4 py-14 -mt-[40px]">
-                <div class="mb-7 flex items-center gap-4">
-                    <span class="logo-mark auth-logo"></span>
-                    <div class="text-left leading-tight">
-                        <div class="text-[14px] font-semibold uppercase tracking-[0.28em] text-white">Sparkle</div>
-                        <div class="text-[12px] font-medium uppercase tracking-[0.32em] text-white">Cloud</div>
-                    </div>
-                </div>
+             
+                 <div class=" flex items-center mb-7 gap-3">
+        <a href="{{ route('home') }}" aria-label="Go to home">
+            <img src="{{ asset('Frame.svg') }}" alt="Sparkle Cloud" class="h-auto w-full max-w-full object-contain sm:max-w-[200px] md:max-w-[161px]">
+        </a>
+    </div>
+
 
                 <div class="auth-card auth-card--hero auth-float w-full max-w-[520px] rounded-[20px] px-9 py-9 text-center">
                     <h1 class="auth-title">Lo<span class="text-[#999999]">gin</span></h1>

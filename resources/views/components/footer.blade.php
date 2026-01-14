@@ -1,4 +1,4 @@
-<footer class="footer px-16 mb-8">
+<footer class="footer px-16">
     <div class="footer__top flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div class="footer__brand">
             <img src="{{ asset('Frame.svg') }}" alt="Sparkle Cloud" class="footer__logo h-auto w-full max-w-full object-contain ">

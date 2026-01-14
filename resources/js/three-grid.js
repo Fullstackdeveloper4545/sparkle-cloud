@@ -21,18 +21,18 @@
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(width, height);
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setClearColor(0x050506);
+    renderer.setClearColor(0x101010);
     container.appendChild(renderer.domElement);
 
     const gridSize = 62;
     const divisions = 14;
     const step = gridSize / divisions;
 
-    const frontWidth = 4;
+    const frontWidth = 3.3;
     const backWidth = 0.6;
 
     const frontCurveStrength = -200;
-    const frontCurveDepth = 18;
+    const frontCurveDepth = 12;
 
     const baseGrey = new THREE.Color(0x8a8a8a);
     const purpleGlow = new THREE.Color(0xb26cff);
@@ -380,7 +380,7 @@ function fixButtonBorder() {
   rect.setAttribute('ry', r);
 
   const length = rect.getTotalLength();
-  const dash   = length * 0.06;
+  const dash   = length * 0.12;
   const gap    = length - dash;
 
   rect.style.strokeDasharray  = `${dash} ${gap}`;
@@ -392,7 +392,7 @@ function fixButtonBorder() {
       { strokeDashoffset: -length }
     ],
     {
-      duration: 2500,
+      duration: 3500,
       iterations: Infinity,
       easing: "linear"
     }

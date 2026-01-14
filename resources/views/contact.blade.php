@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+       @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/hero-three.js'])
     </head>
     <body class="min-h-screen overflow-x-hidden bg-[#0b0b0e] text-white antialiased">
         <div class="prices-page w-full pt-6">

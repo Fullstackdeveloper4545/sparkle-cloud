@@ -24,6 +24,7 @@ Sign in
 </a>
 
         </div>
+        
     </div>
 
     <div class="container-hero__mockup">

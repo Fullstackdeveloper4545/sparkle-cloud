@@ -9,7 +9,7 @@
         About Sparkle
       </button>
       <h3 class="mt-4 text-[22px] font-medium leading-[1.3] text-white break-words sm:text-[28px] md:text-[44px] lg:text-[50px]">
-        We believe that<br />building technology<br />should be as easy as<br /> using it. That's why we <br />created an AI
+        We beli<span class="text-[#999999]">eve that</span><br />building t<span class="text-[#999999]">echnology</span><br />should be <span class="text-[#999999]">as easy as</span><br /> using it. Th<span class="text-[#999999]">at's why we</span> <br />create<span class="text-[#999999]">d an AI</span>
       </h3>
       <div class="mt-8 flex flex-col items-start gap-6 text-white sm:flex-row sm:items-center sm:gap-10">
         <div>
